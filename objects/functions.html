@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Declarar Objetos con Funciones</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function Tutor (nombre,apellido){
+                this.nombre = nombre;
+                this.saludar = function(){
+                    console.log("Hola a todos soy "+this.nombre);
+                }
+                if(typeof apellido !== "undefined"){
+                    this.nombre_completo = nombre +" "+ apellido;
+                }
+            }
+            var uriel = new Tutor("Uriel","Hernández");
+            uriel.saludar();
+            console.log(uriel.nombre_completo);
+            var jose = new Tutor("José");
+            jose.saludar();
+            console.log(jose.nombre_completo);            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+    </head>
+    <body>
+        <script>
+            //JSON => JavaScript Object Notation
+            //Diccionarios / Hashes
+            var arreglos = [1,2,3,4];
+            
+            //Imprime el titulo
+            /*
+            var curso = {
+                titulo: "Curso Javascript",
+                videos:19,
+                tutor: "Uriel"
+            };
+
+            console.log(curso["titulo"]);*/
+
+            var curso = {
+                titulo: "Curso Javascript",
+                videos: 19,
+                tutor: "Uriel",
+                introduccion: function(){
+                    console.log("Bienvenido al curso: "+ this.titulo+ " que tiene "+ this.videos+" videos");
+                }
+            };
+
+            console.log(curso.introduccion());
+
+
+            
+        </script>
+    </body>
+</html>
